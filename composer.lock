@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5022b142b0b6ae5362040bdbf4de86b3",
+    "content-hash": "46ae048ace0086a669a5227b93e3d119",
     "packages": [
         {
             "name": "facade/ignition-contracts",
@@ -1226,44 +1226,31 @@
         },
         {
             "name": "uwebpro/php-serial",
-            "version": "1.0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willpercey-gb/PHP-Serial.git",
-                "reference": "69f31b281654f845134c9424d5656af28170d2e6"
+                "reference": "e84d49f9b590d847df9e0fa69efbe2b48d88c01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willpercey-gb/PHP-Serial/zipball/69f31b281654f845134c9424d5656af28170d2e6",
-                "reference": "69f31b281654f845134c9424d5656af28170d2e6",
+                "url": "https://api.github.com/repos/willpercey-gb/PHP-Serial/zipball/e84d49f9b590d847df9e0fa69efbe2b48d88c01a",
+                "reference": "e84d49f9b590d847df9e0fa69efbe2b48d88c01a",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GNU GPLv2"
-            ],
-            "authors": [
-                {
-                    "name": "Rémy Sanchez",
-                    "email": "remy.sanchez@hyperthese.net"
-                }
-            ],
             "description": "Multi-platform serial port access convenience class",
             "support": {
-                "source": "https://github.com/willpercey-gb/PHP-Serial/tree/1.0.1"
+                "source": "https://github.com/willpercey-gb/PHP-Serial/tree/develop"
             },
-            "time": "2014-02-21T00:24:39+00:00"
+            "time": "2020-07-30T12:52:42+00:00"
         }
     ],
     "packages-dev": [
@@ -1568,6 +1555,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "uwebpro/php-serial": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

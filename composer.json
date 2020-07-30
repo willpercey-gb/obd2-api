@@ -13,7 +13,7 @@
     "symfony/console": "^5.1",
     "symfony/var-dumper": "^5.1",
     "symfony/process": "^5.1",
-    "uwebpro/php-serial": "^1.0",
+    "uwebpro/php-serial": "dev-develop",
     "nunomaduro/collision": "^4.2"
   },
   "require-dev": {

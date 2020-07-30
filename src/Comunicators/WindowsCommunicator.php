@@ -8,6 +8,13 @@ use UWebPro\Vehicle\Uniform\CommunicatorInterface;
 
 class WindowsCommunicator extends Standard implements CommunicatorInterface
 {
+    private $serial;
+
+    public function __construct()
+    {
+        $this->serial = new \PhpSerial();
+    }
+
     public function detectDevice(): self
     {
         $proc = new Process(['mode']);
@@ -20,5 +27,13 @@ class WindowsCommunicator extends Standard implements CommunicatorInterface
             dd($proc->getOutput());
         }
         return $this;
+    }
+
+    public function setDevice(string $device)
+    {
+        $this->serial->deviceSet($device);
+        $this->serial->deviceOpen();
+        $this->serial->sendMessage('@1', 5);
+        $this->serial->readPort(999999999);
     }
 }
